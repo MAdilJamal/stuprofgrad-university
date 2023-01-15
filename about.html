@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuprofgrad University-About</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="studentLogin.html">Students</a></li>
+            <li><a href="facultylogin.html">Faculty</a></li>
+            <li><a href="">Parents</a></li>
+            <li><a href="">Alumni</a></li>
+            <div>
+                <a href="#" ><img onclick="showSearchBox()" src="search.png" alt=""></a>
+            </div>
+            <input  class="searchBox" id="searchBox" type="text" placeholder="Search">
+        </ul>
+    </div>
+    <section class="about-header" onclick="hideSearchBox()">
+        <nav>
+            <a href="index.html" class="logo-main"><img src="logo1.jpg" alt=""><h1>Stuprofgrad</h1></a>
+            <div class="nav-links" id="navLinks">
+                <p class="fa-solid" onclick="hideMenu()">Close</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>        
+                </ul>
+            </div>
+            <p class="fa-solid" onclick="showMenu()">Menu</p>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <section class="about-info">
+        <div class="row">
+            <div class="about-info-column">
+                <h1>We Are One Of The Worlds Largest<br>Universities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cupiditate molestiae sunt fuga natus temporibus quis
+                    quasi doloremque minima quisquam, eum saepe soluta quas eni, labore ab dolores laborum expedita.</p>
+                <a href="index.html">Explore Now</a>
+            </div>
+            <div class="about-info-column">
+                <img src="about.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Connect With Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, error ad labore, 
+            <br>sit quia vel velit omnis mollitia ab<br>
+            </p>
+            <div class="logos">
+                <img src="fb-logo.png" alt="">
+                <img src="insta-logo.png" alt="">
+                <img src="Linkedin-logo.png" alt="">
+                <img src="twitter-logo.png" alt="">
+            </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2023 Stuprofgrad University</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuprofgrad University-Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="studentLogin.html">Students</a></li>
+            <li><a href="facultylogin.html">Faculty</a></li>
+            <li><a href="">Parents</a></li>
+            <li><a href="">Alumni</a></li>
+            <div>
+                <a href="#" ><img onclick="showSearchBox()" src="search.png" alt=""></a>
+            </div>
+            <input  class="searchBox" id="searchBox" type="text" placeholder="Search">
+        </ul>
+    </div>
+    <section class="contact-header" onclick="hideSearchBox()">
+        <nav>
+            <a href="index.html" class="logo-main"><img src="logo1.jpg" alt="">
+                <h1>Stuprofgrad</h1>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <p class="fa-solid" onclick="hideMenu()">Close</p>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <p class="fa-solid" onclick="showMenu()">Menu</p>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.72334435757!2d-0.38246906128673785!3d51.52873356137
+        898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s
+        in!4v1664733865558!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-info">
+        <div class="row">
+            <div class="contact-info-column">
+                <div>
+                    <img src="home.png">
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Street 4, New Delhi, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <img src="phone.png">
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <img src="envelope.png">
+                    <span>
+                        <h5>info@stuprofgraduniversity.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-info-column">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h1>Send your query.</h1>
+                    <input type="text" id="name" placeholder="Enter your name" required></input>
+                    <input type="email" id="email" placeholder="Email address" required></input>
+                    <input type="text" id="subject" placeholder="Subject"></input>
+                    <textarea rows="5" id="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <h4>Connect With Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, error ad labore, 
+            <br>sit quia vel velit omnis mollitia ab<br>
+            </p>
+            <div class="logos">
+                <img src="fb-logo.png" alt="">
+                <img src="insta-logo.png" alt="">
+                <img src="Linkedin-logo.png" alt="">
+                <img src="twitter-logo.png" alt="">
+            </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © 2023 Stuprofgrad University</p>
+    </div>
+</body>
+
+</html>
