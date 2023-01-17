@@ -651,6 +651,12 @@ h3{
         top: 0;
         display: flex;
     }
+    .top ul div{
+        display: none;
+    }
+    .top ul div a{
+        display: none;
+    }
     .searchBox{
         display: none;
         position: absolute;
